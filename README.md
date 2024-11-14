@@ -1,1 +1,1 @@
-# auth-truckstop-asauthorize
+# auth-truckstop-as-authorize
