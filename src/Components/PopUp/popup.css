@@ -259,7 +259,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 input[type=number] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 .confirm-button-class {
     background-color: #0071c7 !important;
