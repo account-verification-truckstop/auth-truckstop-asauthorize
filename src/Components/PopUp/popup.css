@@ -287,3 +287,13 @@ input[type=number] {
     align-items: center;
     justify-content: center;
 }
+
+.confirm-button-class {
+    background-color: #0071c7 !important;
+    color: white !important;
+    border: none !important;
+}
+.title-class {
+    font-size: 24px;
+    color: black;
+}

